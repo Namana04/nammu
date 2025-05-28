@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result cal</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div id="div6">
+    <h1>result predictor</h1>
+    <label for="">your name</label>
+    <input type="text" name="" id="mname">
+    <button onclick="per()">check</button>
+    <p id="res"></p>
+    </div>
+
+    <script>
+        function per(){
+            var mname=document.getElementById("mname").value;
+            var per=Math.random()*100;
+            var res=document.getElementById("res");
+            res.innerHTML="the result is"+ per;
+        }
+    </script>
+
+</body>
+</html>

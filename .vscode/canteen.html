@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+   
+</head>
+<body>
+   <h1>Welcome to Hotel</h1>
+     <h2>MENUE</h2>
+   <h2> <label for="">idli-rs.30</label>
+    <input type="number" name="" id="idli"></h2>
+   <h2> <label for="">roti-rs.40</label>
+    <input type="number" name="" id="roti"></h2>
+   <h2> <label for="">coffee-rs.20</label>
+    <input type="number" name="" id="coffee"></h2>
+    <h2><label for="">butter kulcha-rs.50</label>
+    <input type="number" name="" id="kul"></h2>
+    <h2><label for="">panner butter masala-rs.230</label>
+    <input type="number" name="" id="pan"></h2>
+   <h2> <button onclick="bill()">submit</button></h2>
+    <p id="res"></p>
+    
+    <script>
+        function bill(){
+            var idli=document.getElementById("idli").value;
+            var roti=document.getElementById("roti").value;
+            var coffee=document.getElementById("coffee").value; 
+            var kul=document.getElementById("kul").value;
+            var pan=document.getElementById("pan").value;
+            var total=(idli*30) + (roti*40) + (coffee*20) +(kul*50) +(pan*230);
+            //  alert(total);
+             res.innerHTML="the bill is" + total;
+
+        }
+    </script> 
+</body>
+</html>
